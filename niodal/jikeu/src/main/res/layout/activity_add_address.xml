@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_layout"
+        android:orientation="vertical">
+
+        <include layout="@layout/header_text"/>
+
+        <View
+            style="@style/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_buju"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_add_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_add_name"
+                android:maxLength="11"
+                android:singleLine="true"
+                />
+
+            <ImageView
+                android:id="@+id/ivDeteleName"
+                style="@style/image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/detele"/>
+        </LinearLayout>
+
+        <View
+            style="@style/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_buju"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_add_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:hint="@string/contact_add_number"
+                android:maxLength="11"
+                android:singleLine="true"
+                />
+
+            <ImageView
+                android:id="@+id/ivDeteleContact"
+                style="@style/image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/detele"/>
+        </LinearLayout>
+
+        <View
+            style="@style/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"/>
+
+        <View
+            style="@style/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginTop="@dimen/usual_padding"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_buju"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_add_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:hint="@string/contact_address"
+                android:maxLength="3"
+                android:minLines="3"
+                />
+
+            <ImageView
+                android:id="@+id/ivDeteleAddress"
+                style="@style/image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:src="@drawable/detele"/>
+        </LinearLayout>
+
+        <View
+            style="@style/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvAddSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/button_login_regiter"
+            android:layout_gravity="center"
+            android:text="@string/save"/>
+    </LinearLayout>
+</FrameLayout>

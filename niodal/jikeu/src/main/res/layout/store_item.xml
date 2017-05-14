@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginTop="@dimen/usual_padding"
+              android:background="@color/bg_buju"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/newtext"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivStoreImage"
+            style="@style/image_view"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="top"
+            android:src="@mipmap/ic_launcher"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvStoreNmae"
+                    style="@style/textview_message"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/store_name"/>
+
+                <TextView
+                    android:id="@+id/tvIsButton"
+                    android:clickable="true"
+                    style="@style/textview_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/setting_exit"
+                    android:padding="@dimen/usual_padding"
+                    android:text="@string/yishoucang"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvStoreMessage"
+                style="@style/textview_message_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/message_store"/>
+
+            <ImageView
+                android:id="@+id/ivStoreMessageImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                style="@style/image_view"
+                android:padding="@dimen/usual_margin_half"
+                android:src="@drawable/storemessage"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/newtext"/>
+</LinearLayout>

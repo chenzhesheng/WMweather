@@ -1,0 +1,100 @@
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="background_gradient_start">#000000</color>
+    <color name="background_gradient_end">#DDDDDD</color>
+    <color name="fastlane_background">#0096a6</color>
+    <color name="search_opaque">#ffaa3f</color>
+    <color name="detail_background">#0096a6</color>
+    <color name="soft_opaque">#30000000</color>
+    <color name="img_soft_opaque">#30FF0000</color>
+    <color name="img_full_opaque">#00000000</color>
+    <color name="black_opaque">#AA000000</color>
+    <color name="black">#ff000000</color>
+    <color name="orange_transparent">#AAFADCA7</color>
+    <color name="orange">#FADCA7</color>
+    <color name="yellow">#EEFF41</color>
+    <color name="default_background">#3d3d3d</color>
+    <color name="gray">#f7f7f7</color>
+    <color name="red">#fc5c5c</color>
+    <color name="radio_button_selected_color">#ffffff</color>
+    <color name="radio_button_unselected_color">@android:color/transparent</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="green">#ff00ff00</color>
+    <color name="higtlight">#ff0078f0</color>
+    <color name="durationtext">#ff7d7d7d</color>
+    <color name="background">#ffc3ddea</color>
+    <color name="transparent">#00000000</color>
+    <color name="mediacontroller_bg_pressed">#ff53c1bd</color>
+    <color name="mediacontroller_bg">#99000000</color>
+    <color name="background_dark">#f4f4f4</color>
+    <color name="topbar_separator">#8B1A1A</color>
+    <color name="topbar_title">#FFFFFF</color>
+    <color name="topbar_background_start">#8B1A1A</color>
+    <color name="topbar_background_end">#CD2626</color>
+    <color name="topbar_background_item_pressed_start">#FF7F00</color>
+    <color name="topbar_background_item_pressed_end">#EE7600</color>
+    <color name="actionbar_separator">#8B1A1A</color>
+    <color name="actionbar_title">#FFFFFF</color>
+    <color name="actionbar_background_start">#e25e91</color>
+    <color name="actionbar_background_end">#e25e91</color>
+    <color name="actionbar_background_item_pressed_start">#FF7F00</color>
+    <color name="actionbar_background_item_pressed_end">#EE7600</color>
+    <!-- 本app专用颜色 -->
+    <color name="line">#bebebe</color>
+    <color name="text_color3">#bebebe</color>
+    <color name="text_color1">#7a7a7a</color>
+    <color name="text_color2">#00b703</color>
+    <color name="head_color">#090321</color>
+    <color name="chart_color1">#44d62c</color>
+    <color name="chart_color2">#facd19</color>
+    <color name="chart_color3">#d70a64</color>
+    <color name="chart_color4">#00382b</color>
+    <color name="chart_color5">#3b4147</color>
+    <color name="card_color_normal">#b7c3f9</color>
+    <color name="card_color_focused">#97a1d1</color>
+    <color name="store_manager_color1">#9a9b9d</color>
+    <color name="store_manager_green">#89d100</color>
+    <color name="light_black">#77767a</color>
+    <color name="order_black">#3c3c3c</color>
+    <color name="order_green">#56d176</color>
+    <color name="backround">#cccccc</color>
+
+    <!--Create by KUN Start-->
+    <!--白色字体-->
+    <color name="white">#ffffffff</color>
+    <!--主题绿-->
+    <color name="App">#ff6600</color>
+    <!--比主题绿色浅一点-->
+    <color name="common_theme_green_light">#40d0b0</color>
+    <!--主题灰-->
+    <color name="common_theme_gray">#6d6d6d</color>
+    <!--比主题灰更深-->
+    <color name="common_theme_deep_gray">#4d4d4d</color>
+    <!--分隔线灰-->
+    <color name="common_line_gray">#dddddd</color>
+    <!--背景灰色-->
+    <color name="common_background_clear_gray">#f1f2f3</color>
+    <!--背景灰色再浅一点，接近白色-->
+    <color name="common_background_near_white">#fafafa</color>
+    <!--朦胧的灰色-->
+    <color name="Intention_clear_gray">#54fffffe</color>
+    <!--朦胧的黑色-->
+    <color name="common_clear_black">#50000000</color>
+    <!--Create by KUN End-->
+
+    <!--junjie-->
+    <!--略带透明黑-->
+    <color name="college_detail_back_transparent">#40000000</color>
+    <color name="college_detail_green_0">#ddfaf5</color>
+    <color name="college_detail_green_1">#68dac1</color>
+    <!-- 2/26 sheng -->
+    <color name="app_color">#4cdabc</color>
+    <color name="app_clear_color">#564cdabc</color>
+    <color name="app_x_gray">#ebebeb</color>
+    <color name="app_text_gray">#afafaf</color>
+    <color name="newtext">#b8b8b8</color>
+    <color name="bg_layout">#f5f5f5</color>
+    <color name="bg_buju">#ffffff</color>
+</resources>

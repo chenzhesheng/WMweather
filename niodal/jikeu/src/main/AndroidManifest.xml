@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.jikeu">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".mymessage.view.MyMessageActivity"/>
+        <activity android:name=".mymessage.view.AlterNameActivity"/>
+        <activity android:name=".mymessage.view.AlterContactActivity"/>
+        <activity android:name=".mymessage.view.AddressActivity"/>
+        <activity android:name=".mymessage.view.AddAddressActivity"/>
+        <activity android:name=".mycoupon.view.MyCouponActivity"/>
+        <activity android:name=".myorder.view.MyOrderActivity"/>
+        <activity android:name=".mycollect.view.MyCollectActivity"/>
+    </application>
+
+</manifest>

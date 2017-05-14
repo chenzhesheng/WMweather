@@ -1,0 +1,209 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="notitle">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="HKDialogLoading" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="common_title">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="textview_login_order">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="pay_style">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <!--junjie-->
+    <style name="collegeDetail_text_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@color/college_detail_back_transparent</item>
+
+    </style>
+
+    <!-- 2/26 sheng : 登录的EditText -->
+    <style name="edittext_login_register">
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingBottom">@dimen/usual_button_margin</item>
+        <item name="android:paddingLeft">@dimen/usual_margin_high</item>
+        <item name="android:paddingTop">@dimen/usual_button_margin</item>
+        <item name="android:paddingRight">@dimen/usual_button_margin</item>
+        <item name="android:textSize">@dimen/spinner_text</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textColorHint">@color/newtext</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 2/26 sheng: 注册的EditText-->
+    <style name="edittext_register">
+        <item name="android:background">@null</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">@dimen/usual_button_margin</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/ticket_dimen2</item>
+        <item name="android:textColorHint">@color/newtext</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- 2/26 sheng: 登录注册的button按钮，可通用 -->
+    <style name="button_login_regiter">
+        <item name="android:layout_marginLeft">@dimen/usual_margin</item>
+        <item name="android:layout_marginRight">@dimen/usual_margin</item>
+        <item name="android:background">@drawable/login_ed_corners</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/usual_padding</item>
+        <item name="android:paddingBottom">@dimen/usual_padding</item>
+        <item name="android:clickable">true</item>
+        <item name="android:paddingLeft">@dimen/usual_margin_half</item>
+        <item name="android:paddingRight">@dimen/usual_margin_half</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <!-- 2/27 sheng: 退出灰色按钮，可通用 -->
+    <style name="button_exit">
+        <item name="android:layout_marginLeft">@dimen/usual_margin_high</item>
+        <item name="android:layout_marginRight">@dimen/usual_margin_high</item>
+        <item name="android:background">@drawable/setting_exit</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onClick</item>
+        <item name="android:paddingLeft">@dimen/usual_margin_half</item>
+        <item name="android:paddingRight">@dimen/usual_margin_half</item>
+        <item name="android:textColor">@color/app_text_gray</item>
+    </style>
+
+    <!-- 2/26 sheng : 背景为灰色的View，可用于绘制线条-->
+    <style name="view_line">
+        <item name="android:background">@color/newtext</item>
+        <item name="android:layout_marginLeft">@dimen/usual_margin</item>
+    </style>
+
+    <!-- 2/26 sheng : 背景为灰色的View，可用于绘制线条-->
+    <style name="view_line_verify">
+        <item name="android:background">@color/newtext</item>
+        <item name="android:layout_marginLeft">@dimen/usual_button_margin</item>
+    </style>
+
+    <!-- 2/27 sheng: fragment我的 显示信息的小图片，可通用 -->
+    <style name="image_view">
+        <item name="android:layout_marginLeft">@dimen/usual_margin</item>
+        <item name="android:layout_marginRight">@dimen/usual_margin</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!-- 3/1 sheng: activity 测评 显示信息的小图片+边距，可通用 -->
+    <style name="image_view_appraisal">
+        <item name="android:layout_marginTop">@dimen/usual_margin_half</item>
+        <item name="android:layout_marginBottom">@dimen/usual_margin_half</item>
+        <item name="android:layout_marginLeft">@dimen/usual_margin</item>
+        <item name="android:layout_marginRight">@dimen/usual_margin</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!-- 2/27 sheng: fragment我的 显示信息 -->
+    <style name="user_message_layout_message">
+        <item name="android:textColor">@color/newtext</item>
+        <item name="android:textSize">@dimen/ticket_dimen2</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/usual_margin</item>
+    </style>
+
+    <!-- 2/27 sheng: fragment我的 显示信息的跳转按钮 >，可通用-->
+    <style name="skip_start_intent">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginRight">@dimen/usual_margin</item>
+        <item name="android:src">@drawable/tiaozhuan</item>
+    </style>
+
+    <!-- 2/27 sheng: textview 显示信息，可通用 -->
+    <style name="textview_message">
+        <item name="android:textColor">@color/black_opaque</item>
+        <item name="android:textSize">@dimen/common_text_size_small</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">@dimen/usual_padding</item>
+        <item name="android:layout_marginRight">@dimen/usual_padding</item>
+        <item name="android:layout_marginBottom">@dimen/usual_padding</item>
+        <item name="android:layout_marginTop">@dimen/usual_padding</item>
+    </style>
+
+    <style name="textview_message_new" parent="textview_message">
+        <item name="android:textColor">@color/newtext</item>
+    </style>
+
+    <!-- 2/27 sheng: textview 显示信息,没指定右边距，可通用 -->
+    <style name="textview_message_color_right">
+        <item name="android:textColor">@color/newtext</item>
+        <item name="android:textSize">@dimen/spinner_text</item>
+        <item name="android:layout_marginLeft">@dimen/usual_button_margin</item>
+        <item name="android:layout_marginRight">@dimen/usual_button_margin</item>
+        <item name="android:layout_marginBottom">@dimen/usual_button_margin</item>
+        <item name="android:layout_marginTop">@dimen/usual_button_margin</item>
+    </style>
+
+    <!-- 2/27 sheng: textview 显示信息,没指定颜色，可通用 -->
+    <style name="textview_message_color">
+        <item name="android:textSize">@dimen/spinner_text</item>
+        <item name="android:layout_marginLeft">@dimen/usual_button_margin</item>
+        <item name="android:layout_marginRight">@dimen/usual_button_margin</item>
+        <item name="android:layout_marginBottom">@dimen/usual_button_margin</item>
+        <item name="android:layout_marginTop">@dimen/usual_button_margin</item>
+    </style>
+
+    <!-- 2/27 sheng: textview 显示信息,没指定颜色和左边距，可通用 -->
+    <style name="textview_message_color_left">
+        <item name="android:textSize">@dimen/spinner_text</item>
+        <item name="android:layout_marginRight">@dimen/usual_button_margin</item>
+        <item name="android:layout_marginBottom">@dimen/usual_button_margin</item>
+        <item name="android:layout_marginTop">@dimen/usual_button_margin</item>
+    </style>
+
+    <!-- 2/27 sheng: textview 显示信息,没指定颜色和左边距，可通用 -->
+    <style name="textview_message_color_left_right">
+        <item name="android:textSize">@dimen/spinner_text</item>
+        <item name="android:layout_marginBottom">@dimen/usual_button_margin</item>
+        <item name="android:layout_marginTop">@dimen/usual_button_margin</item>
+    </style>
+
+
+    <!-- 2/27 sheng: textview 显示信息，可通用 -->
+    <style name="textview_message_result">
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/newtext</item>
+        <item name="android:textSize">@dimen/spinner_text</item>
+        <item name="android:layout_marginLeft">@dimen/usual_button_margin</item>
+        <item name="android:layout_marginRight">@dimen/usual_margin_xhigh</item>
+        <item name="android:layout_marginBottom">@dimen/usual_margin_half</item>
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/usual_padding"
+        android:background="@color/bg_buju"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvAddressName"
+                style="@style/textview_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/address_name"/>
+
+            <TextView
+                android:id="@+id/tvContactNumber"
+                style="@style/textview_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_13800138000"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvAddress"
+            style="@style/textview_message_new"
+            android:textSize="@dimen/common_text_size_small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            style="@style/view_line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/usual_padding"
+                android:layout_marginRight="@dimen/usual_padding"
+                />
+
+            <TextView
+                style="@style/textview_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/address_item"/>
+
+            <TextView
+                android:id="@+id/tvEditItem"
+                style="@style/textview_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/item_edit"
+                android:text="@string/address_item_edit"/>
+
+            <TextView
+                android:id="@+id/tvDeteleItem"
+                style="@style/textview_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/item_detele"
+                android:text="@string/address_item_detele"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
