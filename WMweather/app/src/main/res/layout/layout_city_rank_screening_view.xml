@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99484d4a"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="城市"
+            android:textColor="#0296f1"
+            android:textSize="16sp" />
+
+
+        <RadioGroup
+            android:id="@+id/radio_group_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_button_city_74"
+                style="@style/style_radio_button_real_time_pollutants"
+                android:text="74城市" />
+
+            <RadioButton
+                android:id="@+id/radio_button_city_338"
+                style="@style/style_radio_button_real_time_pollutants"
+                android:checked="true"
+                android:text="338城市" />
+
+            <RadioButton
+                android:id="@+id/radio_button_city_2_26"
+                style="@style/style_radio_button_real_time_pollutants"
+                android:text="2+26城市" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="时间"
+            android:textColor="#0296f1"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_button_rank_hour"
+                style="@style/style_radio_button_real_time_pollutants"
+                android:text="时排名" />
+
+            <RadioButton
+                android:id="@+id/radio_button_rank_day"
+                style="@style/style_radio_button_real_time_pollutants"
+                android:text="日排名" />
+
+            <RadioButton
+                android:id="@+id/radio_button_rank_month"
+                style="@style/style_radio_button_real_time_pollutants"
+                android:text="月排名" />
+
+            <RadioButton
+                android:id="@+id/radio_button_rank_year"
+                style="@style/style_radio_button_real_time_pollutants"
+                android:checked="true"
+                android:text="年排名" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="详细项"
+            android:textColor="#0296f1"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_pollutants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_button_aqi"
+                style="@style/style_radio_button_real_time_pollutants"
+                android:checked="true"
+                android:text="AQI" />
+
+            <RadioButton
+                android:id="@+id/radio_button_PM25"
+                style="@style/style_radio_button_real_time_pollutants"
+                android:text="PM2.5" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>

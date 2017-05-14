@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_information_edit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#484d4a">
+
+        <TextView
+            android:id="@+id/text_view_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:drawableLeft="@drawable/ic_back"
+            android:gravity="center"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="信息编辑"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="头像"
+            android:textSize="16sp" />
+
+        <weather.wm.com.wmweather.common.view.CircleImageView
+            android:id="@+id/image_view_avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/ic_avatar_default" />
+
+    </RelativeLayout>
+
+    <weather.wm.com.wmweather.common.view.DoubleTextView
+        android:id="@+id/text_view_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        app:key_text="姓名"
+        app:value_icon="@drawable/ic_to_right"
+        app:value_text="飞飞世界" />
+
+    <weather.wm.com.wmweather.common.view.DoubleTextView
+        android:id="@+id/text_view_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="#ffffff"
+        app:key_text="性别"
+        app:value_icon="@drawable/ic_to_right"
+        app:value_text="男" />
+
+    <weather.wm.com.wmweather.common.view.DoubleTextView
+        android:id="@+id/text_view_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="#ffffff"
+        app:key_text="手机号"
+        app:value_icon="@drawable/ic_to_right"
+        app:value_text="15526356678" />
+
+    <weather.wm.com.wmweather.common.view.DoubleTextView
+        android:id="@+id/text_view_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="#ffffff"
+        app:key_text="所在区域"
+        app:value_icon="@drawable/ic_to_right"
+        app:value_text="浙江" />
+
+    <weather.wm.com.wmweather.common.view.DoubleTextView
+        android:id="@+id/text_view_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="#ffffff"
+        app:key_text="所在城市"
+        app:value_icon="@drawable/ic_to_right"
+        app:value_text="杭州" />
+
+    <weather.wm.com.wmweather.common.view.DoubleTextView
+        android:id="@+id/text_view_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="#ffffff"
+        app:key_text="邮箱"
+        app:value_icon="@drawable/ic_to_right"
+        app:value_text="15526356678@163.com" />
+
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_button_1"
+        android:text="保存"
+        android:textColor="#0296f1" />
+
+</LinearLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_layout_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="#99484d4a"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp">
+
+        <TextView
+            android:id="@+id/text_view_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="东四环监控点"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="污染物浓度(ng/m3;CO位mg/m3)"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_view_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="475"
+            android:textColor="#ffffff"
+            android:textSize="80sp" />
+
+        <TextView
+            android:id="@+id/text_view_result"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/text_view_value"
+            android:background="#f7ae05"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="严重污染"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_view_first_pollutant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_view_result"
+            android:layout_below="@+id/text_view_result"
+            android:layout_marginTop="10dp"
+            android:text="首要污染物：PM2.5"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/text_view_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_view_result"
+            android:layout_below="@+id/text_view_first_pollutant"
+            android:layout_marginTop="10dp"
+            android:text="时间：2016年12月24日12:00实时"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/style_real_time_data_address_pollutant"
+            android:text="PM2.5" />
+
+        <TextView
+            style="@style/style_real_time_data_address_pollutant"
+            android:text="PM10" />
+
+        <TextView
+            style="@style/style_real_time_data_address_pollutant"
+            android:text="CO" />
+
+        <TextView
+            style="@style/style_real_time_data_address_pollutant"
+            android:text="SO2" />
+
+        <TextView
+            style="@style/style_real_time_data_address_pollutant"
+            android:text="NO2" />
+
+        <TextView
+            style="@style/style_real_time_data_address_pollutant"
+            android:text="O3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/text_view_PM2_5"
+            style="@style/style_real_time_data_address_pollutant"
+            android:text="300" />
+
+        <TextView
+            android:id="@+id/text_view_PM10"
+            style="@style/style_real_time_data_address_pollutant"
+            android:text="400" />
+
+        <TextView
+            android:id="@+id/text_view_CO"
+            style="@style/style_real_time_data_address_pollutant"
+            android:text="100" />
+
+        <TextView
+            android:id="@+id/text_view_SO2"
+            style="@style/style_real_time_data_address_pollutant"
+            android:text="264" />
+
+        <TextView
+            android:id="@+id/text_view_NO2"
+            style="@style/style_real_time_data_address_pollutant"
+            android:text="12" />
+
+        <TextView
+            android:id="@+id/text_view_O3"
+            style="@style/style_real_time_data_address_pollutant"
+            android:text="33" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_marginBottom="10dp"
+            android:background="#0296f1" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>
+

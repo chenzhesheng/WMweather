@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home_test"
+    android:orientation="vertical">
+
+    <weather.wm.com.wmweather.common.view.NoScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/radio_group_main"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_button_home"
+            style="@style/style_radio_button_main"
+            android:checked="true"
+            android:drawableTop="@drawable/icon_main_home_selector"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/radio_button_real_time"
+            style="@style/style_radio_button_main"
+            android:drawableTop="@drawable/icon_main_real_time_selector"
+            android:text="实时" />
+
+        <RadioButton
+            android:id="@+id/radio_button_history"
+            style="@style/style_radio_button_main"
+            android:drawableTop="@drawable/icon_main_history_selector"
+            android:text="历史" />
+
+        <RadioButton
+            android:id="@+id/radio_button_statistical"
+            style="@style/style_radio_button_main"
+            android:drawableTop="@drawable/icon_main_statistical_selector"
+            android:text="统计" />
+
+        <RadioButton
+            android:id="@+id/radio_button_account"
+            style="@style/style_radio_button_main"
+            android:drawableTop="@drawable/icon_main_account_selector"
+            android:text="我的" />
+
+    </RadioGroup>
+
+</LinearLayout>

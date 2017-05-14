@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="10"
+              android:background="#EEEEEE"
+              android:padding="10dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:gravity="center">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="时间"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/text_view_stat_contrast_date_start"
+                    style="@style/style_text_view_history_date"
+                    android:background="@null"
+                    android:textColor="#333333"
+                    android:layout_marginTop="10dp"
+                    android:text="2016-03-02"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_margin="5dp"
+                    android:background="#222222"/>
+            </LinearLayout>
+            <View
+                android:layout_width="15dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center_vertical"
+                android:background="#333333"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/text_view_stat_contrast_date_end"
+                    style="@style/style_text_view_history_date"
+                    android:background="@null"
+                    android:textColor="#333333"
+                    android:layout_marginTop="10dp"
+                    android:text="2016-03-02"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:layout_margin="5dp"
+                    android:background="#222222"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:gravity="center">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="污染物"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <weather.wm.com.wmweather.common.view.FlowRadioGroup
+            android:id="@+id/radio_group_stat_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radio_button_AQI"
+                style="@style/style_radio_button_stat"
+                android:checked="true"
+                android:text="AQI" />
+
+            <RadioButton
+                android:id="@+id/radio_button_PM2"
+                style="@style/style_radio_button_stat"
+                android:text="PM2" />
+            <RadioButton
+                android:id="@+id/radio_button_PM10"
+                style="@style/style_radio_button_stat"
+                android:text="PM10" />
+            <RadioButton
+                android:id="@+id/radio_button_CO"
+                style="@style/style_radio_button_stat"
+                android:text="CO" />
+            <RadioButton
+                android:id="@+id/radio_button_NO2"
+                style="@style/style_radio_button_stat"
+                android:text="NO2" />
+            <RadioButton
+                android:id="@+id/radio_button_SO2"
+                style="@style/style_radio_button_stat"
+                android:text="SO2" />
+            <RadioButton
+                android:id="@+id/radio_button_O3"
+                style="@style/style_radio_button_stat"
+                android:text="O3" />
+        </weather.wm.com.wmweather.common.view.FlowRadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#FFFFFF"
+        android:layout_weight="1"
+        android:layout_marginTop="2dp"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="区域"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#EEEEEE"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_stat_contrast_chart"
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:text="区域"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:text=" 监控点"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:gravity="center"
+                android:text="污染物"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#EEEEEE"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_site_ranking"
+            android:layout_width="match_parent"
+            android:layout_weight="5"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:layout_height="0dp"/>
+    </LinearLayout>
+</LinearLayout>

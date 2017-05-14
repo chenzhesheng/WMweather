@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:background="#484d4a">
+
+        <TextView
+            android:id="@+id/text_view_statistical_stat_histroy"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableBottom="@drawable/top_sjx"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:clickable="true"
+            android:layout_toLeftOf="@+id/text_view_statistical_stat_duibi"
+            android:padding="10dp"
+            android:text="历史数据"/>
+
+        <TextView
+            android:id="@+id/text_view_statistical_stat_duibi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:clickable="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:text="对比统计"/>
+
+        <TextView
+            android:id="@+id/text_view_statistical_stat_zhandian"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:clickable="true"
+            android:layout_toRightOf="@+id/text_view_statistical_stat_duibi"
+            android:padding="10dp"
+            android:textSize="18sp"
+            android:text="站点统计"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

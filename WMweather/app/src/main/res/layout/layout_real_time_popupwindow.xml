@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#99484d4a">
+
+    <LinearLayout
+        android:id="@+id/linear_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="污染物"
+                android:textColor="#0296f1"
+                android:textSize="16sp" />
+
+
+            <weather.wm.com.wmweather.common.view.FlowRadioGroup
+                android:id="@+id/radio_group_real_time_pollutants"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_button_aqi"
+                    style="@style/style_radio_button_real_time_pollutants"
+                    android:checked="true"
+                    android:text="AQI" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_PM25"
+                    style="@style/style_radio_button_real_time_pollutants"
+                    android:text="PM2.5" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_PM10"
+                    style="@style/style_radio_button_real_time_pollutants"
+                    android:text="PM10" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_CO"
+                    style="@style/style_radio_button_real_time_pollutants"
+                    android:text="CO" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_NO2"
+                    style="@style/style_radio_button_real_time_pollutants"
+                    android:text="NO2" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_SO2"
+                    style="@style/style_radio_button_real_time_pollutants"
+                    android:text="SO2" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_O3"
+                    style="@style/style_radio_button_real_time_pollutants"
+                    android:text="O3" />
+
+            </weather.wm.com.wmweather.common.view.FlowRadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:text="类型"
+                android:textColor="#0296f1"
+                android:textSize="16sp" />
+
+            <weather.wm.com.wmweather.common.view.FlowLinearLayout
+                android:id="@+id/linear_layout_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            </weather.wm.com.wmweather.common.view.FlowLinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:gravity="center_horizontal"
+                android:maxLines="1"
+                android:text="区域"
+                android:textColor="#0296f1"
+                android:textSize="16sp" />
+
+            <weather.wm.com.wmweather.common.view.FlowLinearLayout
+                android:id="@+id/linear_layout_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    style="@style/style_radio_button_real_time_pollutants"
+                    android:checked="true"
+                    android:id="@+id/checkbox_all"
+                    android:text="全市" />
+
+            </weather.wm.com.wmweather.common.view.FlowLinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

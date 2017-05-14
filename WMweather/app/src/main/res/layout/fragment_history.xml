@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_map_test"
+                android:layout_height="match_parent">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#484d4a">
+
+        <TextView
+            android:id="@+id/text_view_pollutants"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/ic_arrow_bottom"
+            android:gravity="center"
+            android:text="AQI"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="历史数据"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/text_view_screening"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:text="筛选" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_fenbutu"
+                style="@style/style_radio_button_history_type"
+                android:background="@drawable/bg_button_history_left_focus"
+                android:text="分布图"/>
+
+            <Button
+                android:id="@+id/button_chazhitu"
+                style="@style/style_radio_button_history_type"
+                android:background="#FFFFFF"
+                android:text="插值图"/>
+
+            <Button
+                android:id="@+id/button_weixingtu"
+                style="@style/style_radio_button_history_type"
+                android:background="@drawable/bg_button_history_right"
+                android:text="卫星图"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_view_current_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#333333"
+                android:text="当前:2017-02-03"
+                android:singleLine="true"
+                android:textSize="12sp"/>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:max="100"
+                android:layout_height="wrap_content"
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"/>
+
+            <TextView
+                android:id="@+id/text_view_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:text="2017-02-03  2017-02-03"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/image_view_pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:clickable="true"
+                android:background="#FFFFFF"
+                android:src="@drawable/jdt_left2"/>
+            <ImageView
+                android:id="@+id/image_view_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:clickable="true"
+                android:background="#FFFFFF"
+                android:src="@drawable/jdt_zanting"/>
+            <ImageView
+                android:id="@+id/image_view_next"
+                android:layout_width="wrap_content"
+                android:layout_margin="7dp"
+                android:background="#FFFFFF"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jdt_right"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar_loding"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

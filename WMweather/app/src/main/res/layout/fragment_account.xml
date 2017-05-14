@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#484d4a"
+        android:gravity="center"
+        android:text="个人中心"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_personal"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="#ffffff">
+
+            <weather.wm.com.wmweather.common.view.CircleImageView
+                android:id="@+id/image_view_avatar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/ic_avatar_default" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/image_view_avatar">
+
+                <TextView
+                    android:id="@+id/text_view_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="飞飞世界"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/text_view_name"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="id：123456" />
+
+                <TextView
+                    android:id="@+id/text_view_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_view_name"
+                    android:layout_marginTop="5dp"
+                    android:text="cell：135****0678" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <weather.wm.com.wmweather.common.view.DoubleTextView
+            android:id="@+id/text_view_security_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            app:key_icon="@drawable/ic_security_center"
+            app:key_text="安全中心"
+            app:value_icon="@drawable/ic_to_right" />
+
+        <weather.wm.com.wmweather.common.view.DoubleTextView
+            android:id="@+id/text_view_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="#ffffff"
+            app:key_icon="@drawable/ic_setting"
+            app:key_text="设置"
+            app:value_icon="@drawable/ic_to_right" />
+
+        <weather.wm.com.wmweather.common.view.DoubleTextView
+            android:id="@+id/text_view_notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="#ffffff"
+            app:key_icon="@drawable/ic_notification"
+            app:key_text="通知中心"
+            app:value_icon="@drawable/ic_to_right"
+            app:value_text="关" />
+
+        <weather.wm.com.wmweather.common.view.DoubleTextView
+            android:id="@+id/text_view_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="#ffffff"
+            app:key_icon="@drawable/ic_about"
+            app:key_text="关于我们"
+            app:value_icon="@drawable/ic_to_right" />
+
+        <Button
+            android:id="@+id/button_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_button_1"
+            android:text="注销"
+            android:textColor="#ff401a" />
+
+    </LinearLayout>
+
+</LinearLayout>

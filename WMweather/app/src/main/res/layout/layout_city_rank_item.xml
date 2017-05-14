@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/text_view_rank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/text_view_province"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="浙江"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/text_view_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.98"
+        android:gravity="center"
+        android:text="杭州"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/text_view_aqi"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="#ff0000"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="4"
+        android:textColor="#666666"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/text_view_pollutants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.82"
+        android:gravity="center"
+        android:text="PM2.5"
+        android:textSize="14sp" />
+
+</LinearLayout>
